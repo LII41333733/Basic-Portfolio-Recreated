@@ -170,12 +170,12 @@ textarea {
 /* PORTFOLIO SECITON - portfolio.html */
 
 .gallery-div {
-    height: 200px;
-    width: 250px;
-    background-color: #4aaaa5;
-    display: inline-block;
-    margin: 20px 20px 20px 0px;
+    height: 250px;
+    width: 65%;
+    margin: 10px;
     position: relative;
+    background-size: cover;
+    
 }
 
 .gallery-div a{
@@ -183,44 +183,68 @@ textarea {
 }
 
 #image1 {
-    background: url(../images/tech.jpeg)
+    background-image: url(../images/tech.jpeg);
 }
 
 #image2 {
-    background: url(../images/tech2.jpeg)
+    background-image: url(../images/tech2.jpeg);
 }
 
 #image3 {
-    background: url(../images/tech3.jpeg)
+    background-image: url(../images/tech3.jpeg);
 }
 
 #image4 {
-    background: url(../images/tech4.jpeg)
+    background-image: url(../images/tech4.jpeg);
 }
 
 #image5 {
-    background: url(../images/tech5.jpeg)
+    background-image: url(../images/tech5.jpeg);
 }
 
 .gallery-div span{
-    height: 40px;
+    height: 45px;
     width: 100%;
     background-color: #4aaaa5;
     position: absolute;
-    top: 140px;
+    top: 160px;
     color: white;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
     font-family: 'Georgia';
     font-size: 1.1rem;
 }
 
 .flex-div {
-    padding: 0 25px 10px 25px;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 980px) {
+
+    .main {
+        width: 85%;
+    }
+
+    .gallery-div {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        width: 85%;
+    }
+
+    .gallery-div {
+        width: 45%;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -270,12 +294,17 @@ textarea {
         clear: both;
     }
 
+    .gallery-div {
+        height: 250px;
+        width: 85%;
+        max-width: 350px;
+        margin: 10px;
+        position: relative;
+        background-size: cover;
+        
+    }
+
 }
 
 
-@media screen and (max-width: 768px) {
 
-}
-@media screen and (max-width: 980px) {
-
-}
