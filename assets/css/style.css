@@ -16,6 +16,8 @@ body {
     font-weight: 500;
 }
 
+
+
 /* HEADER */
 
 .header {
@@ -35,8 +37,7 @@ body {
     padding: 0 10px;
     font-size: 1.80rem;
     font-weight: bold;
-    /* letter-spacing: 4px; */
-    
+    letter-spacing: 2px;
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -51,32 +52,21 @@ ul {
 
 li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 8px;
 
 }
-
-
 
 li:last-child {
     margin-right: 30px;
-
 }
+
+.spacer {
+    padding: 0;
+}
+
+
 
 /* CONTAINER */
-
-
-.container {
-    margin-left: 50px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    max-width: 960px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 85%;
-}
-
-
 
 h1 {
     color: #4aaaa5;
@@ -91,14 +81,15 @@ hr {
     border: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #808080;
-    font-weight: 600;
-}
-
-a:hover {
-    text-decoration: underline;
+.container {
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 960px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
 }
 
 
@@ -125,7 +116,20 @@ a:hover {
     float: none;
 }
 
+
+
+
 /* ABOUT ME SECTION - index.html */
+
+a {
+    text-decoration: none;
+    color: #808080;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 .profile-pic {
     height: auto;
@@ -146,6 +150,9 @@ p {
 .clear {
     clear: both;
 }
+
+
+
 
 /* CONTACT SECTION - contact.html */
 
@@ -180,6 +187,8 @@ textarea {
 .submit-button:hover {
     text-decoration: underline;
 }
+
+
 
 /* PORTFOLIO SECITON - portfolio.html */
 
@@ -222,37 +231,18 @@ textarea {
 }
 
 
-/* If the screen size is 980px wide or less */
-
 
 @media screen and (max-width: 980px) {
-
 
     .container {
         margin-left: auto;
         margin-right: auto;
     }
 
-    /* --- INDEX --- */
-
-    /* --- PORTFOLIO --- */
-
-    /* --- CONTACT --- */
-.gallery-div {
-    width: 45%;
-}
-}
-
-@media screen and (max-width: 768px) {
-
-
-
-    /* --- INDEX --- */
-
-    /* --- PORTFOLIO --- */
-
-
-    /* --- CONTACT --- */
+    .gallery-div {
+        width: 45%;
+    }
+    
 }
 
 @media screen and (max-width: 640px) {
@@ -275,9 +265,6 @@ textarea {
         margin-right: 0;
     }
 
-
-   
-    /* --- INDEX --- */
     .profile-pic {
         display: block;
         float: none;
@@ -290,9 +277,6 @@ textarea {
         font-size: 0.85rem;
     }
 
-
-    /* --- PORTFOLIO --- */
-
     .gallery-div {
         width: 100%;
     }
@@ -300,8 +284,6 @@ textarea {
     .flex-div {
         justify-content: center;
     }
-
-    /* --- CONTACT --- */
 
 }
 
